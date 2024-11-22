@@ -38,6 +38,7 @@ contract OnlineBanking {
     }
 
     function resetMyBalance() public currentUser {
+        on_memory_balance = 0;
         balances[msg.sender]  = 0;
     }
 }
